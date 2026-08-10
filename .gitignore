@@ -1,0 +1,16 @@
+# C/C++ Compiled Binaries (Linux/Mac)
+main
+a.out
+*.o
+*.out
+
+# C/C++ Compiled Binaries (Windows)
+*.exe
+
+# JavaScript / Node.js
+node_modules/
+.env
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
