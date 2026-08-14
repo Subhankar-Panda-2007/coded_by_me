@@ -209,7 +209,7 @@ int main(void){
                 if(income>=800000){
                         printf("You will get 0%% Scholarhsip due to high income bracket!\n");
                         return 0;
-                    }               
+                }               
         break;
     }
     return 0;
