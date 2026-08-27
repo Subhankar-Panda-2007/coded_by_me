@@ -22,13 +22,14 @@ void viewtheatermap(){
     seats[1][2]=isbooked;
     seats[2][3]=isbooked;
     seats[0][3]=isbooked;
-    printf("\n\n");
+    printf("\n");
     printf("SHOWING THEATER MAP\n");
     for(int k=0;k<3;k++){
         for(int l=0;l<4;l++){
             (seats[k][l]==0)?printf("[o] "):printf("[x] ");
         }printf("\n");
     }
+    printf("\n\n");
 }
 
 
@@ -36,13 +37,15 @@ void viewtheatermap(){
 int main (void){
     printf("WELLCOME TO TICKET BOOKING SYSTEM\n");
 
+    while(1){
     int userinputresult=mainmenu();
     
     switch(userinputresult){
         case 1: viewtheatermap();break;
         // case 2: bookticket();break;
-        case 3: printf("\n\nExiting the Application!\n");break;
+        case 3: printf("\n\nExiting the Application!\n");return 0;break;
     }
-        
+    }
+
     return 0;
 }
